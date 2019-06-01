@@ -18,11 +18,10 @@ import java.util.Map;
 /**
  * @Author: xiaoshijiu
  * @Date: 2019/5/27
- * @Description: Druid连接池配置类，顺带扫描mapper接口，和开启缓存
+ * @Description: Druid连接池配置类，顺带扫描mapper接口
  */
 @Configuration
 @MapperScan("com.fei.springboothigh.mapper")
-@EnableCaching
 public class MybatisScan {
 
     /**

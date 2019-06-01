@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @Author: xiaoshijiu
@@ -14,7 +15,9 @@ import javax.persistence.Table;
 @Table(name = "employee")
 @Getter
 @Setter
-public class Employee {
+public class Employee implements Serializable {
+
+    private static final long serialVersionUID = 5336128105870854037L;
 
     /**
      * 定义常量字段
