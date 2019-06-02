@@ -71,6 +71,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ发送消息测试
      */
     @Test
+    @Ignore
     public void rabbitTest() {
         /**
          * 发送消息，第一个参数：交给哪个交换机处理，第二个参数：消息的路由键，第三个参数：消息对象（Object类型），这里发送字符串
@@ -82,6 +83,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ发送消息测试
      */
     @Test
+    @Ignore
     public void rabbitTest2() {
         /**
          * 发送消息，第一个参数：交给哪个交换机处理，第二个参数：消息的路由键，第三个参数：消息对象（Object类型），这里发送具体对象
@@ -97,6 +99,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ接受消息测试
      */
     @Test
+    @Ignore
     public void rabbitTest3() {
         // 接受消息，参数：队列名
         Object o = rabbitTemplate.receiveAndConvert("queue.test4");
@@ -111,6 +114,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ使用AMQPAdmin管理组件
      */
     @Test
+    @Ignore
     public void rabbitTest4() {
         // new一个Direct类型的交换器，指定名称，其他持久化默认true，自动删除默认false
         DirectExchange exchange = new DirectExchange("springboot.rabbitmq.direct");
@@ -122,6 +126,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ使用AMQPAdmin管理组件
      */
     @Test
+    @Ignore
     public void rabbitTest5() {
         // new一个消息队列Queue，指定名称，其他持久化默认true，自动删除默认false
         Queue queue = new Queue("springboot.queue.test");
@@ -133,6 +138,7 @@ public class SpringboothighApplicationTests {
      * rabbitMQ使用AMQPAdmin管理组件
      */
     @Test
+    @Ignore
     public void rabbitTest6() {
         // 第一个参数：目的地（Queue名）；第二个参数：目的地类型（Queue或者其他）；第三个参数：交换器名；第四个参数：绑定键（Routing Key）；最后一个参数：指定一些参数，这里不设置
         Binding binding = new Binding("springboot.queue.test", Binding.DestinationType.QUEUE,
@@ -145,6 +151,7 @@ public class SpringboothighApplicationTests {
      * 新建的组件测试，rabbitMQ发送消息
      */
     @Test
+    @Ignore
     public void rabbitTest7() {
         /**
          * 发送消息，第一个参数：交给哪个交换机处理，第二个参数：消息的路由键，第三个参数：消息对象（Object类型），这里发送具体对象
