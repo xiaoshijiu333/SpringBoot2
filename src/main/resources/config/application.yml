@@ -17,6 +17,12 @@ spring:
   redis:
     host: 192.168.31.60
     port: 6379
+#rabbitmq配置
+  rabbitmq:
+    host: 192.168.31.60
+    username: admin
+    password: 123456
+    port: 5672
 
 #Mybatis配置文件
 mybatis:
