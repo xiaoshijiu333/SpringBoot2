@@ -64,8 +64,6 @@ public class RedisConfig {
         // 开启@class（方便反序列化时候，能够根据class类型识别回来）
         objectMapper.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL,
                 JsonTypeInfo.As.PROPERTY);
-        GenericJackson2JsonRedisSerializer redisValueSerializer = new GenericJackson2JsonRedisSerializer(
-                objectMapper);
-        return redisValueSerializer;
+        return new GenericJackson2JsonRedisSerializer(objectMapper);
     }
 }

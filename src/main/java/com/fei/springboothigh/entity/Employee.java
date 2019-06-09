@@ -22,13 +22,13 @@ public class Employee implements Serializable {
     /**
      * 定义常量字段
      */
-    public final static String EMPLOYEE_ID = "employeeId";
+    public static final String EMPLOYEE_ID = "employeeId";
     @Id
     private Integer employeeId;
 
-    public final static String EMPLOYEE_NAME = "employeeName";
+    public static  final String EMPLOYEE_NAME = "employeeName";
     private String employeeName;
 
-    public final static String EMPLOYEE_SEX = "employeeSex";
+    public static final String EMPLOYEE_SEX = "employeeSex";
     private Integer employeeSex;
 }
